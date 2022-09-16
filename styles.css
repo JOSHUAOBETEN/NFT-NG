@@ -1,0 +1,117 @@
+/* CSS for buzzin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+#event {
+    width: 100%;
+    height: 100vh;
+    background-image: url(media/background.png);
+    background-size: cover;
+    padding-top: 50px;
+}
+
+#event h1 {
+    text-align: center;
+    font-size: 90px;
+    color: #b0fa03;
+    margin-bottom: 40px;
+}
+
+#event span {
+    color: #012401;
+}
+
+.loading-1{
+    animation: load-1 2s infinite;
+}
+
+@keyframes load-1 {
+    0%{
+        display: none;
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.7;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.loading-2{
+    animation: load-2 2s infinite;
+}
+
+@keyframes load-2 {
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.4;
+    }
+    
+    75%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+        display: none;
+    }
+}
+
+.loading-3{
+    animation: load-3 2s infinite;
+}
+
+@keyframes load-3 {
+    0%{
+        display: none;
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    75%{
+        opacity: 0.3;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+#event img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+@media screen and (max-width: 900px) {
+    #event img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #event img {
+        width: 70%;
+    }
+}
