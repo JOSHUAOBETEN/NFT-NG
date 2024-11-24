@@ -1,2 +1,2 @@
 # NFT-NG
- Landing page for Nft NG
+ Landing page web for Nft NG
